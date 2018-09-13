@@ -117,9 +117,7 @@ body {
   vertical-align: top;
 
   background-color: #fff;
-/*line-height: 49px;*/
   cursor: pointer;
-  transition: all 0.4s ease;
 }
 
 .sity-choise::after {
@@ -138,7 +136,7 @@ body {
       #fff 4px
     );
   background-color: #5a5a5a;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 .sity-choise:hover::after {
@@ -152,6 +150,8 @@ body {
     );
   background-color: #f36d39;
 }
+
+
 
 f36d39
 

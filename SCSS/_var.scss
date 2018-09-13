@@ -1,0 +1,16 @@
+$fz-s:15px;
+$ff:roboto, arial, sans-serif;
+
+
+@mixin m-font {
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 15px;
+  vertical-align: top;
+}
+
+@mixin trns {
+  transition: all 0.4s ease;
+}
