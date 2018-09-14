@@ -1,0 +1,102 @@
+.about-company {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 57px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.about-company__description {
+  display: inline-block;
+  width: 570px;
+  h2 {
+    margin-top: 0;
+    padding-top: 0;
+    width: 550px;
+    font: $ff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #004167;
+  }
+  p {
+    @include m-font;
+    line-height: 21px;
+    padding-left: 2px;
+    padding-top: 22px;
+  }
+}
+
+
+.company-features {
+  margin-left: 33px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+
+  div {
+    width: 170px;
+    height: 150px;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+
+
+    b{
+      display: inline-block;
+      padding-top: 28px;
+      font: $ff;
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: 500;
+      color:#004167;
+    }
+    p {
+      padding-top: 9px;
+      @include m-font;
+      line-height: 18px;
+    }
+  }
+}
+
+.company-form {
+  margin-left: auto;
+  width: 370px;
+  height: 100%;
+  border: 2px solid $blue;
+
+  form {
+    margin:2px;
+    border: 2px solid $orange;
+    h2{
+      padding-top: 35px;
+      text-align: center;
+      font: $ff;
+      color: $blue;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    p {
+      width: 280px;
+      margin: 0 auto;
+      padding-top: 20px;
+
+      font: $ff;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+
+
+

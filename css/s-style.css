@@ -687,4 +687,109 @@ body {
   background-image: url(../img/prev-hover.png);
 }
 
+/*О компании и первая форма*/
+.about-company {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 57px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.about-company__description {
+  display: inline-block;
+  width: 570px;
+}
+.about-company__description h2 {
+  margin-top: 0;
+  padding-top: 0;
+  width: 550px;
+  font: roboto, arial, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #004167;
+}
+.about-company__description p {
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 15px;
+  vertical-align: top;
+  line-height: 21px;
+  padding-left: 2px;
+  padding-top: 22px;
+}
+
+.company-features {
+  margin-left: 33px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.company-features div {
+  width: 170px;
+  height: 150px;
+  border: 1px solid #e7e7e7;
+  text-align: center;
+}
+.company-features div b {
+  display: inline-block;
+  padding-top: 28px;
+  font: roboto, arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #004167;
+}
+.company-features div p {
+  padding-top: 9px;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 15px;
+  vertical-align: top;
+  line-height: 18px;
+}
+
+.company-form {
+  margin-left: auto;
+  width: 370px;
+  height: 100%;
+  border: 2px solid #004167;
+}
+.company-form form {
+  margin: 2px;
+  border: 2px solid #f36d39;
+}
+.company-form form h2 {
+  padding-top: 35px;
+  text-align: center;
+  font: roboto, arial, sans-serif;
+  color: #004167;
+  font-size: 20px;
+  font-weight: 500;
+}
+.company-form form p {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font: roboto, arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 /*# sourceMappingURL=s-style.css.map */
