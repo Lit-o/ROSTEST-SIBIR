@@ -1,5 +1,5 @@
 .header-second-line {
-  width: 1171px;
+  width: 1170px;
   height: 120px;
   margin: 0 auto;
   display: -webkit-flex;
@@ -12,7 +12,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-  background-color: lightblue;
   a {
     margin-top: 32px;
     margin-right: 72px;
@@ -20,37 +19,103 @@
 }
 
 
-form {
+.main-search {
   margin-top: 40px;
   position: relative;
   width: 400px;
+
+  input {
+    width: 100%;
+    height: 40px;
+    padding-left: 25px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background: #fff;
+    color: #636363;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    @include trns;
+    &:active {
+    border: 2px solid $orange;
+    };
+    &:hover {
+    border: 2px solid $orange;
+    };
+    &:focus {
+    border: 2px solid $orange;
+
+    };
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 55px;
+    height: 40px;
+    padding-left: 0;
+    border: none;
+    background: $orange;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      &:before {
+        content: "";
+        display: block;
+        margin-left: 18px;
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/search-ico.png);
+      }
+  }
 }
 
-form input {
-  width: 100%;
-  height: 42px;
-  padding-left: 10px;
-  border: 2px solid #7BA7AB;
-  border-radius: 5px;
-  outline: none;
-  background: #F9F0DA;
-  color: #9E9C9C;
+.button-container {
+  margin-left: auto;
 }
-form button {
-  position: absolute;
-  top: 0;
-  right: 0px;
-  width: 42px;
-  height: 42px;
-  border: none;
-  background: #7BA7AB;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+.call-order {
+  position: relative;
+  margin-left: 0px;
+  margin-top: 40px;
+  &:before {
+    content: "";
+
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/call-order.png);
+  };
+  &:hover::before {
+    background-image: url(../img/call-order-hover.png);
+  };
 }
-form button:before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  background-image: url(../img/search-ico.png)
+
+.question-order {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 40px;
+
+  &:before {
+    content: "";
+
+    position: absolute;
+    left: 20px;
+    top: 9px;
+    display: block;
+    width: 12px;
+    height: 17px;
+    background-image: url(../img/q-order.png);
+  };
+  &:hover::before {
+    background-image: url(../img/q-order-hover.png);
+  };
 }

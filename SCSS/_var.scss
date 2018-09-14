@@ -1,5 +1,7 @@
 $fz-s:15px;
 $ff:roboto, arial, sans-serif;
+$orange: #f36d39;
+$blue: #004167;
 
 
 @mixin m-font {
@@ -14,3 +16,29 @@ $ff:roboto, arial, sans-serif;
 @mixin trns {
   transition: all 0.4s ease;
 }
+
+@mixin bxbb {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin flex-menu {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
