@@ -22,7 +22,7 @@ $( document ).ready(function() {
 
   // рабочий слайдер о компании
 
-  $('.about-company__foto-slider').slick({
+  $('.main-slider').slick({
     autoplay: true,
     autoplaySpeed: 2100,
     speed: 1000,

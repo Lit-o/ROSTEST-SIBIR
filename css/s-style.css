@@ -85,6 +85,12 @@ body {
   background-color: #fff;
 }
 
+.color {
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+}
+
 /*Первая линия хеадера*/
 /*Первая линия хедора*/
 .first-line__line-design {
@@ -395,7 +401,6 @@ body {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  font-weight: 500;
   background-color: #004167;
   color: #fff;
 }
@@ -414,6 +419,10 @@ body {
   background-color: #f36d39;
   transform: scaleY(5);
 }
+.sertificat-navigations button:active::before {
+  height: 5px;
+  background-color: #f36d39;
+}
 
 .sertification-links-container {
   width: 100%;
@@ -422,9 +431,9 @@ body {
 
 .sertification-links {
   width: 1170px;
-  height: 310px;
+  height: 345px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 29px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -443,15 +452,175 @@ body {
 }
 .sertification-links li {
   width: 270px;
+  padding-bottom: 12px;
+  padding-right: 30px;
 }
 .sertification-links li a {
-  line-height: 21px;
+  padding: 7px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 15px;
+  vertical-align: top;
+  transition: all 0.4s ease;
+}
+.sertification-links li a:hover {
+  color: #f36d39;
 }
 
-.color {
+/*Карусель*/
+.main-slider__container {
+  position: absolute;
+  z-index: -5;
   width: 100%;
-  height: 100px;
-  background-color: lightblue;
+  height: 350px;
+  background-color: #004167;
+}
+
+.main-slider {
+  position: relative;
+  width: 1170px;
+  height: 350px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: inset 210px 0px 170px -15px #004167, inset -210px 0 170px -15px #004167;
+}
+.main-slider div {
+  position: relative;
+  z-index: -1;
+  width: 1170px;
+  height: 350px;
+  background-image: url(../img/main-slider-1.jpg);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.main-slider div h2 {
+  position: relative;
+  z-index: 5;
+  font: roboto, arial, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 36px;
+  margin-top: 120px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+/*красивые дотсы по дизайну*/
+.slick-dots {
+  position: absolute;
+  bottom: 5px;
+}
+
+.slick-dots li button {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+.slick-dots li button:hover {
+  border: 2px solid #fff;
+}
+
+.slick-dots li button:before {
+  content: '';
+  position: absolute;
+  /*    top: 2px;
+      left: 2px;*/
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f36d39;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+
+.slick-dots li.slick-active button {
+  border: 2px solid #fff;
+}
+
+.slick-dots li.slick-active button {
+  border: 2px solid #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  content: '';
+  position: absolute;
+  /*    top: 2px;
+      left: 2px;
+  */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f36d39;
+  opacity: 1;
+}
+
+/*стилизую стрелочки*/
+.slick-prev, .slick-next {
+  z-index: 1001;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.slick-prev {
+  left: 0px;
+}
+
+.slick-next {
+  right: 0px;
+}
+
+.slick-prev:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #004167;
+  background-image: url(../img/prev.png);
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.4s ease;
+}
+
+.slick-prev:hover:before {
+  background-color: #004167;
+  background-image: url(../img/prev-hover.png);
+}
+
+.slick-next:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #004167;
+  background-image: url(../img/prev.png);
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.4s ease;
+  transform: rotate(180deg);
+}
+
+.slick-next:hover:before {
+  background-color: #004167;
+  background-image: url(../img/prev-hover.png);
 }
 
 /*# sourceMappingURL=s-style.css.map */
