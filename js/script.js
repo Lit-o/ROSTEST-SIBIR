@@ -21,13 +21,15 @@ $( document ).ready(function() {
 
 
   // рабочий слайдер о компании
-
+('.fade').slick
   $('.main-slider').slick({
     autoplay: true,
     autoplaySpeed: 2100,
     speed: 1000,
     centerMode: true,
     centerPadding: '0px',
+    fade: true,
+    cssEase: 'linear',
     dots: true,
     pauseOnDotsHover: true,
   });

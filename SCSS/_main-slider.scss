@@ -7,36 +7,93 @@
 }
 
 .main-slider {
-  position: relative;
   width: 1170px;
   height: 350px;
   margin: 0 auto;
   margin-bottom: 0;
   background-color: rgba(0,0,0, 0.0);
-  box-shadow: inset 210px 0px 170px -15px $blue , inset -210px 0 170px  -15px $blue;
-  div {
-    position: relative;
-    z-index: -1;
+
+  .slider-item {
     width: 1170px;
     height: 350px;
-    background-image: url(../img/main-slider-1.jpg);
-    -webkit-background-size: 100%;
-    background-size: 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+
+    .slider-shadow{
+      position: absolute;
+      z-index: -5;
+      background-color: $blue;
+      opacity: 0.65;
+    }
     h2 {
-      position: relative;
-      z-index: 5;
       font: $ff;
       font-size: 36px;
       font-weight: 500;
       color: #fff;
       line-height: 36px;
       margin-top: 120px;
+      opacity: 1;
+    }
+    a {
+      display: inline-block;
+      height: 40px;
+      margin-top: 40px;
+
+      padding-right: 40px;
+      padding-left: 40px;
+      border-radius: 20px;
+      @include bxbb;
+      @include trns;
+      @include m-font;
+      line-height: 40px;
+      color: #fff;
+      background-color: #f36d39;
+
+        &:hover {
+          background-color: #e05b28;
+        };
     }
   }
 }
 
+/*ЗДЕСЬ ВСТАВЛЯЮТСЯ КАРТИНКИ*/
+.slider-img {
+        position: absolute;
+        z-index: -4;
+        width: 1170px;
+        height: 350px;
+
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        box-shadow: inset 150px 0px 150px -15px $blue , inset -150px 0 150px  -15px $blue;
+      }
+
+.slider-img.slide-1 {
+  background-image: url(../img/main-slider-1.jpg);
+}
+
+.slider-img.slide-2 {
+  background-image: url(../img/main-slider-2.jpg);
+}
+
+.slider-img.slide-3 {
+  background-image: url(../img/main-slider-1.jpg);
+}
+.slider-img.slide-4 {
+  background-image: url(../img/main-slider-2.jpg);
+}
+
+.slider-img.slide-5 {
+  background-image: url(../img/main-slider-1.jpg);
+}
+
+
+
+
+.slider-title {
+  position: relative;
+  z-index: 11;
+}
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
@@ -116,12 +173,18 @@
     background-color: rgba(255,255,255, 0.0);
   }
 
+  .slick-prev:before, .slick-next:before{
+    opacity: 1;
+  }
+
   .slick-prev {
-    left: 0px;
+    top: 170px;
+    left: -56px;
   }
 
   .slick-next {
-    right: 0px;
+    top: 170px;
+    right: -56px;
   }
 
   .slick-prev:before {
