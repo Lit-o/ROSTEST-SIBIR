@@ -765,17 +765,18 @@ body {
   line-height: 18px;
 }
 
-.company-form {
+.company-form__container {
   margin-left: auto;
   width: 370px;
   height: 100%;
   border: 2px solid #004167;
 }
-.company-form form {
+.company-form__container form {
+  height: 500px;
   margin: 2px;
   border: 2px solid #f36d39;
 }
-.company-form form h2 {
+.company-form__container form h2 {
   padding-top: 35px;
   text-align: center;
   font: roboto, arial, sans-serif;
@@ -783,13 +784,98 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
-.company-form form p {
+.company-form__container form p {
   width: 280px;
   margin: 0 auto;
   padding-top: 20px;
+  padding-bottom: 15px;
   font: roboto, arial, sans-serif;
   font-size: 12px;
   line-height: 18px;
+}
+.company-form__container form input {
+  display: block;
+  height: 40px;
+  width: 300px;
+  padding-left: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+.company-form__container form button {
+  display: block;
+  height: 40px;
+  width: 300px;
+  padding-left: 20px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #f36d39;
+}
+
+.visualization-check {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  font-family: roboto, arial, sans-serif;
+  font-size: 12px;
+  color: #636363;
+  line-height: 12px;
+  padding: 18px 0;
+}
+.visualization-check a {
+  color: #636363;
+  text-decoration: underline;
+  transition: all 0.4s ease;
+}
+.visualization-check a:hover {
+  color: #f36d39;
+}
+
+#company-first-form-check {
+  width: 1px;
+  height: 1px;
+  right: 4px;
+  top: 5px;
+  position: relative;
+  z-index: -100;
+  opacity: 0;
+}
+
+.visualization-check-label {
+  position: relative;
+}
+
+.visualization-check-label::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url(../img/no-cheked.png);
+}
+
+#company-first-form-check:checked + label::before {
+  background-image: url(../img/cheked.png);
 }
 
 /*# sourceMappingURL=s-style.css.map */
