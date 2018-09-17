@@ -78,6 +78,9 @@
 
 .button-container {
   margin-left: auto;
+  button {
+    transition: background-color 0.4s ease;
+  }
 }
 .call-order {
   position: relative;

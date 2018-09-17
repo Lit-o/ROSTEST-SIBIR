@@ -34,6 +34,17 @@ $( document ).ready(function() {
     pauseOnDotsHover: true,
   });
 
+    // рабочий слайдер о компании
+  $('.specialists-carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 2100,
+    speed: 1600,
+    centerMode: true,
+    slidesToShow: 4,
+    centerPadding: '0px',
+    dots: false,
+
+  });
 
   // делаю слайдер для мобильной версии этапов работы
 

@@ -111,6 +111,15 @@
       font-size: 15px;
       border: 2px solid #ccc;
       border-radius: 20px;
+      outline: 0;
+      @include trns;
+      &:hover {
+        border: 2px solid #f36d39;
+      };
+      &:focus {
+        border: 2px solid #f36d39;
+      };
+
     }
     button {
       display: block;
@@ -124,7 +133,14 @@
       font-family: $ff;
       font-size: 15px;
       color: #fff;
-      background-color: $orange;
+      background-color: #f36d39;
+      &:hover {
+        background-color: #e05b28;
+      };
+      &:focus {
+        outline: 0;
+        background-color: #e05b28;
+      };
     }
   }
 }
@@ -156,8 +172,8 @@
 
 
 #company-first-form-check {
-  width: 1px;
-  height: 1px;
+  width: 2px;
+  height: 2px;
   right: 4px;
   top: 5px;
   position: relative;
