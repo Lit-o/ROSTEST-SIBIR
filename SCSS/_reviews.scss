@@ -24,14 +24,16 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+
 }
 
 .reviews-quote {
   width: 970px;
   font-size: 0;
-  vertical-align: top;
+
 
   div {
+    vertical-align: top;
     margin-top: 27px;
     padding-top: 45px;
     padding-left: 30px;
@@ -46,10 +48,82 @@
     &:first-child {
       margin-right: 30px;
     };
+    p {
+      position: relative;
+      line-height: 21px;
+      &:before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 0;
+        display: block;
+
+        width: 19px;
+        height: 18px;
+        background-image: url(../img/quote.png);
+      };
+    }
+    i {
+      display: inline-block;
+      padding-top: 15px;
+      font-style: normal;
+      color: $blue;
+    }
   }
 
   a {
+    display: inline-block;
+    height: 40px;
     font-size: 15px;
+    line-height: 38px;
+    @include bxbb;
+    margin-top: 34px;
+    padding: 0 37px;
+
+    border: 2px solid $orange;
+    border-radius: 20px;
+    color: $blue;
+    transition: background-color 0.4s linear;
+    &:hover {
+      background-color: $orange;
+      color: #fff;
+    };
+  }
+}
+
+.thx-letter{
+  display: inline-block;
+  width: 170px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 24px;
+
+  img{
+    border: 2px solid #fff;
+    @include trns;
+  }
+  img:hover {
+    border: 2px solid $orange;
+  }
+
+
+  .thx-letter-link {
+    display: inline-block;
+    height: 40px;
+    font-size: 15px;
+    line-height: 38px;
+    @include bxbb;
+    margin-top: 30px;
+    padding: 0 32px;
+
+    border: 2px solid $orange;
+    border-radius: 20px;
+    color: $blue;
+    transition: background-color 0.4s linear;
+    &:hover {
+      background-color: $orange;
+      color: #fff;
+    };
   }
 }
 

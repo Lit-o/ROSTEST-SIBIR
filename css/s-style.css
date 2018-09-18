@@ -1177,9 +1177,9 @@ body {
 .reviews-quote {
   width: 970px;
   font-size: 0;
-  vertical-align: top;
 }
 .reviews-quote div {
+  vertical-align: top;
   margin-top: 27px;
   padding-top: 45px;
   padding-left: 30px;
@@ -1197,8 +1197,78 @@ body {
 .reviews-quote div:first-child {
   margin-right: 30px;
 }
+.reviews-quote div p {
+  position: relative;
+  line-height: 21px;
+}
+.reviews-quote div p:before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 0;
+  display: block;
+  width: 19px;
+  height: 18px;
+  background-image: url(../img/quote.png);
+}
+.reviews-quote div i {
+  display: inline-block;
+  padding-top: 15px;
+  font-style: normal;
+  color: #004167;
+}
 .reviews-quote a {
+  display: inline-block;
+  height: 40px;
   font-size: 15px;
+  line-height: 38px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 34px;
+  padding: 0 37px;
+  border: 2px solid #f36d39;
+  border-radius: 20px;
+  color: #004167;
+  transition: background-color 0.4s linear;
+}
+.reviews-quote a:hover {
+  background-color: #f36d39;
+  color: #fff;
+}
+
+.thx-letter {
+  display: inline-block;
+  width: 170px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 24px;
+}
+.thx-letter img {
+  border: 2px solid #fff;
+  transition: all 0.4s ease;
+}
+.thx-letter img:hover {
+  border: 2px solid #f36d39;
+}
+.thx-letter .thx-letter-link {
+  display: inline-block;
+  height: 40px;
+  font-size: 15px;
+  line-height: 38px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding: 0 32px;
+  border: 2px solid #f36d39;
+  border-radius: 20px;
+  color: #004167;
+  transition: background-color 0.4s linear;
+}
+.thx-letter .thx-letter-link:hover {
+  background-color: #f36d39;
+  color: #fff;
 }
 
 /*# sourceMappingURL=s-style.css.map */
