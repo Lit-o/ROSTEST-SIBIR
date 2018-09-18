@@ -1,0 +1,91 @@
+.clients {
+  width: 1170px;
+  margin: 0 auto;
+  h2 {
+    margin-top: 85px;
+    margin-bottom: 17px;
+    margin-left: 15px;
+    font-family: $ff;
+    font-size: 15px;
+    font-weight: 400;
+    color: $blue;
+  }
+}
+
+
+.clients-slick {
+  width: 1170px;
+  margin: 0 auto;
+  a {
+    display: inline-block;
+    width: 100px;
+
+    margin: 0 15px;
+
+    height: 35px;
+  }
+
+  .clients-slick__item-1{
+    background-image: url(../img/our-clients-100.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-100-hover.jpg)
+    };
+  }
+  .clients-slick__item-2{
+    background-image: url(../img/our-clients-minprom.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-minprom-hover.jpg)
+    };
+  }
+  .clients-slick__item-3{
+    background-image: url(../img/our-clients-gaverment.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-gaverment-hover.jpg)
+    };
+  }
+  .clients-slick__item-4{
+    background-image: url(../img/our-clients-rosteh.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-rosteh-hover.jpg)
+    };
+  }
+  .clients-slick__item-5{
+    background-image: url(../img/our-clients-rostreb.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-rostreb-hover.jpg)
+    };
+  }
+  .clients-slick__item-6{
+    background-image: url(../img/our-clients-minust.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-minust-hover.jpg)
+    };
+  }
+  .clients-slick__item-7{
+    background-image: url(../img/our-clients-vniis.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-vniis-hover.jpg)
+    };
+  }
+  .clients-slick__item-8{
+    background-image: url(../img/our-clients-tamo.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-tamo-hover.jpg)
+    };
+  }
+  .clients-slick__item-9{
+    background-image: url(../img/our-clients-vniimash.jpg);
+    @include trns;
+    &:hover {
+      background-image: url(../img/our-clients-vniimash-hover.jpg)
+    };
+  }
+}

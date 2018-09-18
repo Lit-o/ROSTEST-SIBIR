@@ -1,0 +1,72 @@
+.subscribe {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+
+
+  border: 2px solid $blue;
+
+  form {
+    margin:2px;
+    height: 76px;
+    border: 2px solid $orange;
+    text-align: center;
+
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+  p {
+    display: inline-block;
+    padding-left: 28px;
+    padding-right: 55px;
+    line-height: 72px;
+  }
+
+  input {
+      display: inline-block;
+      height: 40px;
+      width: 300px;
+      padding-left: 20px;
+      @include bxbb;
+      font-family: $ff;
+      font-size: 15px;
+      border: 2px solid #ccc;
+      border-radius: 20px;
+      color: #949494;
+      outline: 0;
+      @include trns;
+      &:hover {
+        border: 2px solid #f36d39;
+      };
+      &:focus {
+        border: 2px solid #f36d39;
+      };
+    }
+
+
+  button {
+      display: inline-block;
+      height: 40px;
+      margin-top: 15px;
+      margin-left: 23px;
+      padding: 0 35px;
+
+
+      margin-bottom: 38px;
+      @include bxbb;
+      font-family: $ff;
+      font-size: 15px;
+      color: #fff;
+      background-color: #f36d39;
+      &:hover {
+        background-color: #e05b28;
+      };
+      &:focus {
+        outline: 0;
+        background-color: #e05b28;
+      };
+    }
+}

@@ -43,7 +43,20 @@ $( document ).ready(function() {
     slidesToShow: 4,
     centerPadding: '0px',
     dots: false,
+  });
 
+  $('.clients-slick').slick({
+    autoplay: true,
+    autoplaySpeed: 2100,
+    speed: 1800,
+    centerMode: true,
+    slidesToShow: 9,
+    centerPadding: '00px',
+    dots: false,
+    arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false
   });
 
   // делаю слайдер для мобильной версии этапов работы

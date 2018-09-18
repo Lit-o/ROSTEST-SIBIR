@@ -1271,4 +1271,161 @@ body {
   color: #fff;
 }
 
+/*Наши клиенты*/
+.clients {
+  width: 1170px;
+  margin: 0 auto;
+}
+.clients h2 {
+  margin-top: 85px;
+  margin-bottom: 17px;
+  margin-left: 15px;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #004167;
+}
+
+.clients-slick {
+  width: 1170px;
+  margin: 0 auto;
+}
+.clients-slick a {
+  display: inline-block;
+  width: 100px;
+  margin: 0 15px;
+  height: 35px;
+}
+.clients-slick .clients-slick__item-1 {
+  background-image: url(../img/our-clients-100.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-1:hover {
+  background-image: url(../img/our-clients-100-hover.jpg);
+}
+.clients-slick .clients-slick__item-2 {
+  background-image: url(../img/our-clients-minprom.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-2:hover {
+  background-image: url(../img/our-clients-minprom-hover.jpg);
+}
+.clients-slick .clients-slick__item-3 {
+  background-image: url(../img/our-clients-gaverment.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-3:hover {
+  background-image: url(../img/our-clients-gaverment-hover.jpg);
+}
+.clients-slick .clients-slick__item-4 {
+  background-image: url(../img/our-clients-rosteh.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-4:hover {
+  background-image: url(../img/our-clients-rosteh-hover.jpg);
+}
+.clients-slick .clients-slick__item-5 {
+  background-image: url(../img/our-clients-rostreb.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-5:hover {
+  background-image: url(../img/our-clients-rostreb-hover.jpg);
+}
+.clients-slick .clients-slick__item-6 {
+  background-image: url(../img/our-clients-minust.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-6:hover {
+  background-image: url(../img/our-clients-minust-hover.jpg);
+}
+.clients-slick .clients-slick__item-7 {
+  background-image: url(../img/our-clients-vniis.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-7:hover {
+  background-image: url(../img/our-clients-vniis-hover.jpg);
+}
+.clients-slick .clients-slick__item-8 {
+  background-image: url(../img/our-clients-tamo.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-8:hover {
+  background-image: url(../img/our-clients-tamo-hover.jpg);
+}
+.clients-slick .clients-slick__item-9 {
+  background-image: url(../img/our-clients-vniimash.jpg);
+  transition: all 0.4s ease;
+}
+.clients-slick .clients-slick__item-9:hover {
+  background-image: url(../img/our-clients-vniimash-hover.jpg);
+}
+
+/*Подписка*/
+.subscribe {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+  border: 2px solid #004167;
+}
+.subscribe form {
+  margin: 2px;
+  height: 76px;
+  border: 2px solid #f36d39;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.subscribe p {
+  display: inline-block;
+  padding-left: 28px;
+  padding-right: 55px;
+  line-height: 72px;
+}
+.subscribe input {
+  display: inline-block;
+  height: 40px;
+  width: 300px;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  color: #949494;
+  outline: 0;
+  transition: all 0.4s ease;
+}
+.subscribe input:hover {
+  border: 2px solid #f36d39;
+}
+.subscribe input:focus {
+  border: 2px solid #f36d39;
+}
+.subscribe button {
+  display: inline-block;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 23px;
+  padding: 0 35px;
+  margin-bottom: 38px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #f36d39;
+}
+.subscribe button:hover {
+  background-color: #e05b28;
+}
+.subscribe button:focus {
+  outline: 0;
+  background-color: #e05b28;
+}
+
 /*# sourceMappingURL=s-style.css.map */
