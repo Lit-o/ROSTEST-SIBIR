@@ -48,6 +48,10 @@
     text-decoration: underline;
     color: #008ada;
     padding-left: 2px;
+    @include trns;
+    &:hover {
+    color: $orange;
+    };
   }
 
   /*стилизую стрелочки*/

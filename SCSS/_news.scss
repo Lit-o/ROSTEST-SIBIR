@@ -1,0 +1,138 @@
+
+
+.size {
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    padding: 5px; /* Поля */
+    text-overflow: ellipsis; /* Многоточие */
+   }
+.size:hover {
+background: #f0f0f0; /* Цвет фона */
+white-space: normal; /* Обычный перенос текста */
+}
+
+
+.box {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-questions {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 90px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: $blue;
+  }
+}
+.news, .questions {
+  padding-top: 34px;
+  padding-left: 30px;
+  @include bxbb;
+  width: 570px;
+  height: 530px;
+
+  background-color: #f2f5f7;
+}
+
+.news-descriptions {
+
+  a {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    width: 490px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include trns;
+    color: #008ada;
+    &:hover {
+      color: $orange;
+    };
+  }
+
+  i {
+    display: block;
+    margin-top: 2px;
+    font-size: 12px;
+    font-style: normal;
+  }
+
+  p {
+    margin-top: 9px;
+    display: inline-block;
+    width: 460px;
+    line-height: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &:last-child {
+    margin-bottom: 0px;
+  };
+}
+
+.all-news, .all-questions {
+  display: inline-block;
+  height: 40px;
+  padding: 0 35px;
+  margin-top: 26px;
+  border: 2px solid #f36d39;
+  border-radius: 20px;
+  @include bxbb;
+
+  line-height: 36px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #004167;
+
+  background-color: #f2f5f7;
+
+  transition: background-color 0.4s ease;
+   &:hover {
+      color: #fff;
+      background-color: #f36d39;
+   };
+}
+.all-news {
+  margin-top: 28px;
+}
+
+.questions {
+  div {
+    margin-top: 15px;
+
+    a { padding-top: 5px;
+  padding-bottom: 11px;
+    /*margin-bottom: 17px;*/
+    line-height: 15px;
+    display: inline-block;
+    width: 490px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include trns;
+    color: #008ada;
+    &:hover {
+      color: $orange;
+      };
+    &:last-child {
+      padding-bottom: 0px;
+
+    };
+     }
+  }
+}

@@ -943,6 +943,10 @@ body {
   text-decoration: underline;
   color: #008ada;
   padding-left: 2px;
+  transition: all 0.4s ease;
+}
+.specialists-carousel a:hover {
+  color: #f36d39;
 }
 .specialists-carousel .slick-prev, .specialists-carousel .slick-next {
   z-index: 1001;
@@ -1004,6 +1008,197 @@ body {
   box-sizing: border-box;
   border: 1px solid #ccc;
   margin: 0 15px;
+}
+
+/*Новости и вопросы*/
+.size {
+  white-space: nowrap;
+  /* Отменяем перенос текста */
+  overflow: hidden;
+  /* Обрезаем содержимое */
+  padding: 5px;
+  /* Поля */
+  text-overflow: ellipsis;
+  /* Многоточие */
+}
+
+.size:hover {
+  background: #f0f0f0;
+  /* Цвет фона */
+  white-space: normal;
+  /* Обычный перенос текста */
+}
+
+.box {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news-questions {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 90px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.news-questions h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #004167;
+}
+
+.news, .questions {
+  padding-top: 34px;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 570px;
+  height: 530px;
+  background-color: #f2f5f7;
+}
+
+.news-descriptions a {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: inline-block;
+  width: 490px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.4s ease;
+  color: #008ada;
+}
+.news-descriptions a:hover {
+  color: #f36d39;
+}
+.news-descriptions i {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  font-style: normal;
+}
+.news-descriptions p {
+  margin-top: 9px;
+  display: inline-block;
+  width: 460px;
+  line-height: 21px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news-descriptions:last-child {
+  margin-bottom: 0px;
+}
+
+.all-news, .all-questions {
+  display: inline-block;
+  height: 40px;
+  padding: 0 35px;
+  margin-top: 26px;
+  border: 2px solid #f36d39;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 36px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #004167;
+  background-color: #f2f5f7;
+  transition: background-color 0.4s ease;
+}
+.all-news:hover, .all-questions:hover {
+  color: #fff;
+  background-color: #f36d39;
+}
+
+.all-news {
+  margin-top: 28px;
+}
+
+.questions div {
+  margin-top: 15px;
+}
+.questions div a {
+  padding-top: 5px;
+  padding-bottom: 11px;
+  /*margin-bottom: 17px;*/
+  line-height: 15px;
+  display: inline-block;
+  width: 490px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.4s ease;
+  color: #008ada;
+}
+.questions div a:hover {
+  color: #f36d39;
+}
+.questions div a:last-child {
+  padding-bottom: 0px;
+}
+
+/*Отзывы*/
+.reviews {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.reviews h2 {
+  display: block;
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 0;
+  font-family: roboto, arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #004167;
+}
+
+.reviews-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.reviews-quote {
+  width: 970px;
+  font-size: 0;
+  vertical-align: top;
+}
+.reviews-quote div {
+  margin-top: 27px;
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 68px;
+  font-size: 15px;
+  display: inline-block;
+  width: 470px;
+  height: 211px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.reviews-quote div:first-child {
+  margin-right: 30px;
+}
+.reviews-quote a {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=s-style.css.map */
