@@ -1366,6 +1366,7 @@ body {
   height: 100%;
   margin: 0 auto;
   margin-top: 35px;
+  margin-bottom: 35px;
   border: 2px solid #004167;
 }
 .subscribe form {
@@ -1426,6 +1427,135 @@ body {
 .subscribe button:focus {
   outline: 0;
   background-color: #e05b28;
+}
+
+/*Футер*/
+footer {
+  background-color: #f2f5f7;
+}
+
+.footer-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.foot-logo img {
+  margin-top: 40px;
+  margin-bottom: 55px;
+}
+.foot-logo p {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.foot-menu {
+  margin-left: 100px;
+  width: 200px;
+  margin-top: 36px;
+}
+.foot-menu li {
+  display: block;
+}
+.foot-menu li a {
+  font-size: 15px;
+  line-height: 27px;
+  color: #5a5a5a;
+  transition: all 0.4s linear;
+}
+.foot-menu li a:hover {
+  color: #f36d39;
+}
+
+.foot-contacts {
+  margin-left: 65px;
+  margin-right: auto;
+  width: 275px;
+}
+.foot-contacts .sity-choise {
+  display: block;
+  margin-top: 30px;
+  background-color: #f2f5f7;
+}
+.foot-contacts .sity-choise:hover {
+  background-color: #f2f5f7;
+}
+.foot-contacts .sity-number {
+  margin-top: 0;
+  padding-left: 0;
+}
+.foot-contacts .header-mail {
+  margin-top: 0;
+  padding-top: 9px;
+}
+.foot-contacts .call-order {
+  margin-top: 20px;
+  background-color: #f2f5f7;
+}
+.foot-contacts .call-order:hover {
+  background-color: #f36d39;
+}
+.foot-contacts a {
+  display: inline-block;
+}
+
+.foot-social p {
+  margin-top: 40px;
+  display: block;
+}
+.foot-social a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  transition: all 0.4s ease;
+  margin-right: 1px;
+}
+.foot-social .foot-vk {
+  background-image: url(../img/foot-vk.png);
+}
+.foot-social .foot-vk:hover {
+  background-image: url(../img/foot-vk-hover.png);
+}
+.foot-social .foot-face {
+  background-image: url(../img/foot-face.png);
+}
+.foot-social .foot-face:hover {
+  background-image: url(../img/foot-face-hover.png);
+}
+.foot-social .foot-google {
+  background-image: url(../img/foot-google.png);
+}
+.foot-social .foot-google:hover {
+  background-image: url(../img/foot-google-hover.png);
+}
+.foot-social .foot-odno {
+  background-image: url(../img/foot-odno.png);
+}
+.foot-social .foot-odno:hover {
+  background-image: url(../img/foot-odno-hover.png);
+}
+.foot-social .foot-mail {
+  background-image: url(../img/foot-mail.png);
+}
+.foot-social .foot-mail:hover {
+  background-image: url(../img/foot-mail-hover.png);
+}
+.foot-social .foot-flamp {
+  background-image: url(../img/foot-flamp.png);
+}
+.foot-social .foot-flamp:hover {
+  background-image: url(../img/foot-flamp-hover.png);
+}
+.foot-social .foot-twit {
+  background-image: url(../img/foot-twit.png);
+}
+.foot-social .foot-twit:hover {
+  background-image: url(../img/foot-twit-hover.png);
 }
 
 /*# sourceMappingURL=s-style.css.map */

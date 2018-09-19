@@ -1,0 +1,139 @@
+footer {
+  background-color: #f2f5f7;
+}
+
+.footer-container {
+  width: 1170px;
+  margin: 0 auto;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.foot-logo {
+  img {
+    margin-top: 40px;
+    margin-bottom: 55px;
+  }
+  p {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}
+
+.foot-menu {
+  margin-left: 100px;
+  width: 200px;
+  margin-top: 36px;
+  li {
+    display: block;
+    a {
+      font-size: 15px;
+      line-height: 27px;
+      color: #5a5a5a;
+      transition: all 0.4s linear;
+      &:hover {
+        color: $orange;
+      };
+    }
+  }
+}
+
+.foot-contacts {
+  margin-left: 65px;
+  margin-right: auto;
+  width: 275px;
+  .sity-choise {
+    display: block;
+    margin-top: 30px;
+    background-color: #f2f5f7;
+    &:hover {
+     background-color: #f2f5f7;
+    };
+  }
+  .sity-number {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .header-mail{
+    margin-top: 0;
+    padding-top: 9px;
+  }
+  .call-order{
+    margin-top: 20px;
+    background-color: #f2f5f7;
+    &:hover {
+      background-color: $orange;
+    };
+  }
+  a {
+    display: inline-block;
+  }
+}
+
+.foot-social {
+  p{
+    margin-top: 40px;
+    display: block;
+  }
+  a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    @include trns;
+    margin-right: 1px;
+  }
+
+  .foot-vk {
+    background-image: url(../img/foot-vk.png);
+    &:hover{
+     background-image: url(../img/foot-vk-hover.png);
+    };
+  }
+
+  .foot-face {
+    background-image: url(../img/foot-face.png);
+    &:hover{
+     background-image: url(../img/foot-face-hover.png);
+    };
+  }
+
+  .foot-google {
+    background-image: url(../img/foot-google.png);
+    &:hover{
+     background-image: url(../img/foot-google-hover.png);
+    };
+  }
+
+  .foot-odno {
+    background-image: url(../img/foot-odno.png);
+    &:hover{
+     background-image: url(../img/foot-odno-hover.png);
+    };
+  }
+
+  .foot-mail {
+    background-image: url(../img/foot-mail.png);
+    &:hover{
+     background-image: url(../img/foot-mail-hover.png);
+    };
+  }
+
+  .foot-flamp {
+    background-image: url(../img/foot-flamp.png);
+    &:hover{
+     background-image: url(../img/foot-flamp-hover.png);
+    };
+  }
+
+  .foot-twit {
+    background-image: url(../img/foot-twit.png);
+    &:hover{
+     background-image: url(../img/foot-twit-hover.png);
+    };
+  }
+}
