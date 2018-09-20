@@ -1,0 +1,54 @@
+.body-404 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-404{
+  .clients {
+    margin-top: 85px;
+  }
+}
+
+.container-404 {
+  width: 1170px;
+  margin: 0 auto;
+
+  h2 {
+    margin-top: 90px;
+    margin-bottom: 35px;
+
+    font: $ff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #004167;
+  };
+  p {
+    width: 612px;
+  }
+  a {
+    display: inline-block;
+    height: 40px;
+    font-size: 15px;
+    line-height: 38px;
+    @include bxbb;
+    margin-top: 30px;
+
+    padding: 0 37px;
+
+    border: 2px solid $orange;
+    border-radius: 20px;
+    color: $blue;
+    transition: background-color 0.4s linear;
+    &:hover {
+      background-color: $orange;
+      color: #fff;
+    };
+  }
+}
+
+

@@ -1558,4 +1558,55 @@ footer {
   background-image: url(../img/foot-twit-hover.png);
 }
 
+/*Стиль 404*/
+.body-404 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-404 .clients {
+  margin-top: 85px;
+}
+
+.container-404 {
+  width: 1170px;
+  margin: 0 auto;
+}
+.container-404 h2 {
+  margin-top: 90px;
+  margin-bottom: 35px;
+  font: roboto, arial, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #004167;
+}
+.container-404 p {
+  width: 612px;
+}
+.container-404 a {
+  display: inline-block;
+  height: 40px;
+  font-size: 15px;
+  line-height: 38px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding: 0 37px;
+  border: 2px solid #f36d39;
+  border-radius: 20px;
+  color: #004167;
+  transition: background-color 0.4s linear;
+}
+.container-404 a:hover {
+  background-color: #f36d39;
+  color: #fff;
+}
+
 /*# sourceMappingURL=s-style.css.map */
