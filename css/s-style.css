@@ -1620,7 +1620,7 @@ footer {
   float: left;
   display: inline-block;
   width: 370px;
-  margin-bottom: 460px;
+  margin-bottom: 360px;
 }
 .body-certification-details aside .visualization-check {
   width: 220px;
@@ -1729,17 +1729,17 @@ footer {
   outline: 0;
   background-color: #e05b28;
 }
-
-.certification-details__main {
-  height: 1170px;
+.body-certification-details aside .clients h2 {
+  margin-top: 65px;
 }
+
 .certification-details__main .bread-crumbs p {
   display: inline-block;
   margin-bottom: 0;
 }
 .certification-details__main h2 {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 30px;
   font-family: roboto, arial, sans-serif;
   font-size: 30px;
@@ -1785,6 +1785,26 @@ footer {
   border: 0 solid #000;
   border-radius: 50%;
   background-color: #004167;
+}
+.certification-details__main h3 {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  font-family: roboto, arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #004167;
+}
+.certification-details__main ol {
+  display: inline-block;
+  margin-top: 17px;
+  list-style: none;
+}
+.certification-details__main ol li {
+  margin-bottom: 18px;
+}
+.certification-details__main ol .num {
+  margin-right: 5px;
+  color: #004167;
 }
 
 /*# sourceMappingURL=s-style.css.map */
