@@ -1609,4 +1609,182 @@ footer {
   color: #fff;
 }
 
+/*Подробнее о сертификации*/
+.mega-container {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.body-certification-details aside {
+  float: left;
+  display: inline-block;
+  width: 370px;
+  margin-bottom: 460px;
+}
+.body-certification-details aside .visualization-check {
+  width: 220px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 60px;
+  padding-top: 10px;
+}
+.body-certification-details aside #certification-details-check {
+  width: 2px;
+  height: 2px;
+  right: 4px;
+  top: 5px;
+  position: relative;
+  z-index: -100;
+  opacity: 0;
+}
+.body-certification-details aside .visualization-check-label {
+  position: relative;
+}
+.body-certification-details aside .visualization-check-label::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 1px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url(../img/no-cheked.png);
+}
+.body-certification-details aside #certification-details-check:checked + label::before {
+  background-image: url(../img/cheked.png);
+}
+.body-certification-details aside .company-form__container {
+  margin-right: 70px;
+  width: 300px;
+  height: 100%;
+  border: 2px solid #004167;
+}
+.body-certification-details aside .company-form__container form {
+  height: 480px;
+  margin: 2px;
+  border: 2px solid #f36d39;
+}
+.body-certification-details aside .company-form__container form h2 {
+  padding-top: 35px;
+  text-align: center;
+  font: roboto, arial, sans-serif;
+  color: #004167;
+  font-size: 20px;
+  font-weight: 500;
+}
+.body-certification-details aside .company-form__container form p {
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font: roboto, arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+.body-certification-details aside .company-form__container form input {
+  display: block;
+  height: 40px;
+  width: 240px;
+  padding-left: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: 0;
+  transition: all 0.4s ease;
+}
+.body-certification-details aside .company-form__container form input:hover {
+  border: 2px solid #f36d39;
+}
+.body-certification-details aside .company-form__container form input:focus {
+  border: 2px solid #f36d39;
+}
+.body-certification-details aside .company-form__container form button {
+  display: block;
+  height: 40px;
+  width: 240px;
+  padding-left: 20px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: roboto, arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #f36d39;
+}
+.body-certification-details aside .company-form__container form button:hover {
+  background-color: #e05b28;
+}
+.body-certification-details aside .company-form__container form button:focus {
+  outline: 0;
+  background-color: #e05b28;
+}
+
+.certification-details__main {
+  height: 1170px;
+}
+.certification-details__main .bread-crumbs p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.certification-details__main h2 {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: roboto, arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #004167;
+}
+.certification-details__main img {
+  float: left;
+  margin-right: 22px;
+  margin-bottom: 12px;
+}
+.certification-details__main p {
+  line-height: 21px;
+}
+.certification-details__main .delimiter {
+  margin-bottom: 24px;
+}
+.certification-details__main a {
+  transition: all 0.2s ease;
+  color: #004167;
+}
+.certification-details__main a:hover {
+  color: #f36d39;
+}
+.certification-details__main ul {
+  margin-top: 15px;
+  display: inline-block;
+}
+.certification-details__main ul li {
+  position: relative;
+  margin-left: 15px;
+  margin-bottom: 18px;
+}
+.certification-details__main ul li::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -13px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border: 0 solid #000;
+  border-radius: 50%;
+  background-color: #004167;
+}
+
 /*# sourceMappingURL=s-style.css.map */

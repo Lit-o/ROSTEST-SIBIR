@@ -1,0 +1,198 @@
+.mega-container {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+
+.body-certification-details {
+  aside {
+    float: left;
+    display: inline-block;
+    width: 370px;
+    margin-bottom: 460px;
+
+    .visualization-check {
+      width: 220px;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 0;
+      margin-left: 60px;
+      padding-top: 10px;
+    }
+
+    #certification-details-check {
+      width: 2px;
+      height: 2px;
+      right: 4px;
+      top: 5px;
+      position: relative;
+      z-index: -100;
+      opacity: 0;
+    }
+    .visualization-check-label {
+      position: relative;
+    }
+    .visualization-check-label::before {
+      content: '';
+
+      position: absolute;
+      left: -30px;
+      top: 1px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+
+      background-image: url(../img/no-cheked.png);
+
+    }
+
+    #certification-details-check:checked + label::before {
+      background-image: url(../img/cheked.png);
+    }
+
+    .company-form__container {
+      margin-right: 70px;
+      width: 300px;
+      height: 100%;
+      border: 2px solid $blue;
+
+      form {
+        height: 480px;
+        margin:2px;
+        border: 2px solid $orange;
+
+        h2{
+          padding-top: 35px;
+          text-align: center;
+          font: $ff;
+          color: $blue;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        p {
+          width: 240px;
+          margin: 0 auto;
+          padding-top: 20px;
+          padding-bottom: 15px;
+
+          font: $ff;
+          font-size: 12px;
+          line-height: 18px;
+        }
+        input {
+          display: block;
+          height: 40px;
+          width: 240px;
+          padding-left: 20px;
+          margin: 0 auto;
+          margin-bottom: 10px;
+          @include bxbb;
+          font-family: $ff;
+          font-size: 15px;
+          border: 2px solid #ccc;
+          border-radius: 20px;
+          outline: 0;
+          @include trns;
+          &:hover {
+            border: 2px solid #f36d39;
+          };
+          &:focus {
+            border: 2px solid #f36d39;
+          };
+
+        }
+        button {
+          display: block;
+          height: 40px;
+          width: 240px;
+          padding-left: 20px;
+          margin: 0 auto;
+
+          margin-bottom: 38px;
+          @include bxbb;
+          font-family: $ff;
+          font-size: 15px;
+          color: #fff;
+          background-color: #f36d39;
+          &:hover {
+            background-color: #e05b28;
+          };
+          &:focus {
+            outline: 0;
+            background-color: #e05b28;
+          };
+        }
+      }
+    }
+  }
+}
+
+.certification-details__main {
+  height: 1170px;
+  .bread-crumbs {
+    p {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    font-family: $ff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    color: $blue;
+  }
+
+  img {
+    float: left;
+    margin-right: 22px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    line-height: 21px;
+  }
+
+  .delimiter {
+    margin-bottom: 24px;
+  }
+
+  a {
+      transition: all 0.2s ease;
+      color:$blue;
+      &:hover {
+        color:$orange;
+      };
+  }
+  ul {
+    margin-top: 15px;
+    display: inline-block;
+    li {
+      position: relative;
+      margin-left: 15px;
+      margin-bottom: 18px;
+      &::before {
+        content:'';
+
+        position: absolute;
+        top: 7px;
+        left: -13px;
+
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border: 0 solid #000;
+        border-radius: 50%;
+        background-color: $blue;
+      };
+    }
+  }
+
+}
